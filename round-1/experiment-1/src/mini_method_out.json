@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "method_name": "pragma_tier_validation_assumption_1",
+    "description": "Validates whether LLM-assigned pragmatic tiers (assertion/presupposition/implicature) correlate with empirical fact correctness. Proposed method: tier-based prediction. Baseline: raw LLM confidence score.",
+    "primary_result": {
+      "spearman_rho": -0.6796,
+      "p_value": 0.0,
+      "ci_95": [
+        -0.7783,
+        -0.5772
+      ],
+      "verdict": "INCONCLUSIVE",
+      "notes": "rho=< 0.70 threshold"
+    },
+    "per_tier_metrics": {
+      "assertion": {
+        "precision": 1.0,
+        "recall": 0.484,
+        "accuracy": 1.0,
+        "n": 45
+      },
+      "presupposition": {
+        "precision": 0.489,
+        "recall": 0.468,
+        "accuracy": 1.0,
+        "n": 45
+      },
+      "implicature": {
+        "precision": 0.167,
+        "recall": 0.179,
+        "accuracy": 1.0,
+        "n": 30
+      }
+    },
+    "per_document_type": {
+      "legal": {
+        "spearman_rho": -0.731,
+        "n_facts": 40
+      },
+      "news": {
+        "spearman_rho": -0.724,
+        "n_facts": 40
+      },
+      "narrative": {
+        "spearman_rho": -0.592,
+        "n_facts": 40
+      }
+    },
+    "ablation_confidence_baseline": {
+      "spearman_rho_confidence": 0.7226,
+      "tier_rho_advantage": -0.043,
+      "notes": "Tier-based: -0.6796 vs confidence: 0.7226"
+    },
+    "dataset": {
+      "total_facts": 120,
+      "total_documents": 15,
+      "facts_per_document_type": {
+        "legal": 40,
+        "news": 40,
+        "narrative": 40
+      }
+    },
+    "misclassification_analysis": {
+      "false_assertions": [],
+      "strong_implicatures": [
+        {
+          "fact": "deliberately continued infringement(Nova Pharmaceuticals Group, despite patent knowledge)",
+          "doc_type": "legal",
+          "reason": "Rule 3 & 4: Document states defendant 'willfully infringed' the patent, with infringement continuing from March 2021 through September 2023. 'Willful' infringement implies deliberate continuation despite patent knowledge. This is directly supported by the judgment findings."
+        },
+        {
+          "fact": "implies inadequacy(mixed environmentalist reactions, accord does not fully address climate science requirements)",
+          "doc_type": "news",
+          "reason": "Rule 3 & 4: Document directly states UN Secretary-General called it 'insufficient on its own' and Greenpeace said it's 'far from what the science demands.' The claim reasonably synthesizes these explicit statements about inadequacy and mixed environmental reactions."
+        },
+        {
+          "fact": "faced challenges in standardizing informal cooking methods(Rosa, grandmother's intuitive cooking style)",
+          "doc_type": "narrative",
+          "reason": "Rule 4: The claim is a reasonable background inference consistent with the document. The document explicitly states the grandmother 'had never measured anything in her life and had cooked entirely by memory and intuition,' and that Rosa spent three years 'converting handfuls and pinches into grams and milliliters.' This directly supports that Rosa faced challenges standardizing informal cooking methods."
+        },
+        {
+          "fact": "conducted to assess climate change impacts(expedition, glacier retreat)",
+          "doc_type": "narrative",
+          "reason": "Rule 4: The claim is a reasonable background inference consistent with the document. The expedition collected ice cores to analyze climate data spanning 800 years including the Little Ice Age and industrial-era warming, and documented glacier retreat. This directly supports the claim about assessing climate change impacts."
+        },
+        {
+          "fact": "required rerouting due to hazard(team, widened crevasse, safety concerns)",
+          "doc_type": "narrative",
+          "reason": "Rule 3: Direct quotation/near-verbatim restatement. Document states 'a crevasse...had widened to four meters, forcing the team to take a two-hour detour around its upper end.' Claim accurately captures this: team required rerouting due to widened crevasse (a safety hazard)."
+        }
+      ],
+      "calibration_recommendations": [
+        "Assertion base probability (legal): observed=1.00, default=0.93",
+        "Presupposition base probability (legal): observed=0.40, default=0.78",
+        "Implicature base probability (legal): observed=0.10, default=0.61",
+        "Assertion base probability (news): observed=1.00, default=0.93",
+        "Presupposition base probability (news): observed=0.47, default=0.78",
+        "Implicature base probability (news): observed=0.10, default=0.61",
+        "Assertion base probability (narrative): observed=1.00, default=0.93",
+        "Presupposition base probability (narrative): observed=0.60, default=0.78",
+        "Implicature base probability (narrative): observed=0.30, default=0.61"
+      ]
+    },
+    "total_api_cost_usd": 0.1551,
+    "total_api_calls": 135,
+    "runtime_seconds": 39.0,
+    "files_generated": {
+      "annotated_facts_jsonl": "/ai-inventor/aii_data/runs/5b0b4/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/facts_with_tiers_and_correctness.jsonl",
+      "correlation_plot_png": "/ai-inventor/aii_data/runs/5b0b4/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/tier_vs_correctness_scatter.png",
+      "misclassification_report_txt": "/ai-inventor/aii_data/runs/5b0b4/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/misclassification_report.txt"
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "pragma_tier_corpus_custom",
+      "examples": [
+        {
+          "input": "Document type: legal | Fact: hired as position(Dr. Sarah Chen, Chief Technology Officer) | Source span: Employee is hired as Chief Technology Officer",
+          "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: Direct quotation. Document states 'Employee is hired as Chief Technology Officer' and identifies Employee as 'Dr. Sarah Chen.' Claim accurately restates this information.",
+          "predict_our_method": "T1:assertion",
+          "predict_baseline": "conf:92",
+          "metadata_doc_id": "legal_01",
+          "metadata_doc_type": "legal",
+          "metadata_tier": "1",
+          "metadata_tier_name": "assertion",
+          "metadata_correctness": "1",
+          "metadata_confidence": "92",
+          "metadata_verdict": "TRUE"
+        },
+        {
+          "input": "Document type: legal | Fact: receives base salary(Dr. Sarah Chen, $280,000 per annum) | Source span: Employer shall pay Employee a base salary of $280,000 per annum",
+          "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: The claim is a direct restatement of the document's explicit statement that 'Employer shall pay Employee a base salary of $280,000 per annum.' The specific amount and frequency match exactly.",
+          "predict_our_method": "T1:assertion",
+          "predict_baseline": "conf:94",
+          "metadata_doc_id": "legal_01",
+          "metadata_doc_type": "legal",
+          "metadata_tier": "1",
+          "metadata_tier_name": "assertion",
+          "metadata_correctness": "1",
+          "metadata_confidence": "94",
+          "metadata_verdict": "TRUE"
+        },
+        {
+          "input": "Document type: legal | Fact: agreement term duration(Employment Agreement, three years) | Source span: continues for a period of three years unless earlier terminated",
+          "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: Direct quotation. Document states 'continues for a period of three years unless earlier terminated.' Claim accurately reflects the stated agreement term duration of three years.",
+          "predict_our_method": "T1:assertion",
+          "predict_baseline": "conf:91",
+          "metadata_doc_id": "legal_01",
+          "metadata_doc_type": "legal",
+          "metadata_tier": "1",
+          "metadata_tier_name": "assertion",
+          "metadata_correctness": "1",
+          "metadata_confidence": "91",
+          "metadata_verdict": "TRUE"
+        }
+      ]
+    }
+  ]
+}

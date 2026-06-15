@@ -1,0 +1,18 @@
+{
+  "title": "NYT News 2000-2007 Source Corpus for Pragma-Stratified Fact Extraction",
+  "layman_summary": "A curated dataset of 55,250 New York Times news articles (2000-2007) selected as source documents for extracting and annotating facts across pragmatic tiers (assertions, presuppositions, and implicatures) using dual-LLM annotation.",
+  "summary": "This artifact provides 55,250 New York Times news articles (2000-2007) sourced from HuggingFace (ErikCikalleshi/new_york_times_news_2000_2007, test split, 274MB), formatted as source documents for pragma-stratified fact extraction. Each example contains: `input` = full article text (up to 3500 chars), `output` = article title, plus metadata: document_type=news, source_dataset, title, date (year), original row index, and text_length. Articles range from 200 to 11,000+ characters; diversity spans politics, culture, sports, business, and lifestyle topics from 2000-2007. The dataset was selected over ContractNLI (Koreeda & Manning EMNLP 2021) because NYT articles are significantly longer and topically diverse, supporting extraction of all three pragmatic tiers — assertions (direct claims), presuppositions (background assumptions), and implicatures (conversational inferences) — across 8-10 facts per document. Downstream method.py should: (1) sample 15-20 articles with 2000-3500 char content, (2) use two LLMs via OpenRouter to extract and annotate facts into assertion/presupposition/implicature tiers with correctness labels, (3) compute Fleiss' kappa for inter-annotator agreement per tier. The full dataset is split into two parts under 100MB each (full_data_out/full_data_out_1.json and full_data_out/full_data_out_2.json) for tractability. Schema validated against exp_sel_data_out.json.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": [
+          "full_data_out/full_data_out_1.json",
+          "full_data_out/full_data_out_2.json"
+        ],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

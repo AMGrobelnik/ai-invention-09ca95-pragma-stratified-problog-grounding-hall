@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "description": "Source documents for pragma-stratified fact extraction",
+    "selected_dataset": "nyt-news-2000-2007",
+    "selection_rationale": "NYT News articles are long (2000-11000 chars), factually dense, and cover diverse topics — ideal for extracting 8-10 facts per document across all pragmatic tiers (assertion, presupposition, implicatu...",
+    "sources": [
+      "NYT News 2000-2007 (ErikCikalleshi/new_york_times_news_2000_2007)"
+    ],
+    "document_types": [
+      "news"
+    ],
+    "total_examples": 55250
+  },
+  "datasets": [
+    {
+      "dataset": "nyt-news-2000-2007",
+      "examples": [
+        {
+          "input": "IF your cocktail passions rest with the gibson, you are all too familiar with the standard slippery cocktail onion of infinite shelf life. But at Washington Park, Jonathan Waxman's new restaurant-as-G...",
+          "output": "A Gibson With Rural Character",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "A Gibson With Rural Character",
+          "metadata_date": "2002",
+          "metadata_row_index": 0,
+          "metadata_text_length": 2923
+        },
+        {
+          "input": "A lot of children in Hawaii are wishing for the same thing this holiday: a Christmas tree.\nA severe shortage has turned the normally placid ritual of selecting a holiday pine into a frenzy of driving,...",
+          "output": "With Christmas Trees in Short Supply, Hawaiians Improvise",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "With Christmas Trees in Short Supply, Hawaiians Improvise",
+          "metadata_date": "2004",
+          "metadata_row_index": 1,
+          "metadata_text_length": 5563
+        },
+        {
+          "input": "The Rev. Al Sharpton has run for office three times from New York, and has lost each time. He has been embroiled in polarizing disputes throughout his career, including the handling of his personal fi...",
+          "output": "A Wily Contender, But Unlikely Winner, Eyes the Presidency",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "A Wily Contender, But Unlikely Winner, Eyes the Presidency",
+          "metadata_date": "2003",
+          "metadata_row_index": 2,
+          "metadata_text_length": 11311
+        }
+      ]
+    }
+  ]
+}

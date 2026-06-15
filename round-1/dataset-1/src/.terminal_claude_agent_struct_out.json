@@ -1,0 +1,15 @@
+{
+  "title": "CLUTRR & RuleTaker: Kinship and Rule-Based Entailment Benchmarks",
+  "layman_summary": "This artifact downloads and standardizes two well-established NLP reasoning benchmarks — CLUTRR (kinship story comprehension) and RuleTaker (logical rule entailment) — into a unified format ready for pragmatic-tier annotation experiments.",
+  "summary": "This dataset artifact prepares two established NLP reasoning benchmarks for the pragmatic-tier annotation experiment described in the artifact plan.\n\n**CLUTRR (Compositional Language Understanding with Text-based Relational Reasoning):** 12,064 training examples from tasksource/clutrr (HuggingFace, originally from Facebook Research). Each example contains a kinship story (sentence1) describing family relationships between named characters, an entity pair (metadata_entity_pair), and an integer kinship relation label (output). These are semi-synthetic stories testing compositional generalization in relational reasoning. Published at EMNLP 2019 (arXiv:1908.06177).\n\n**RuleTaker:** 49,999 stratified examples (capped from 480,152 total train rows) from tasksource/ruletaker (HuggingFace, originally from Allen AI). Each example contains a context of natural language rules and facts, a question claim, and an entailment label ('entailment'/'not entailment'). Examples span multiple depth configs (NatLang and depth-1 through depth-5), enabling stratified evaluation across reasoning complexity. Published at IJCAI 2020 (arXiv:2002.05867).\n\n**Schema:** Both datasets are standardized to the exp_sel_data_out.json format with required 'input' (story/context+question text), 'output' (relation label/entailment label as string), and metadata fields (metadata_task_type, metadata_row_index, plus dataset-specific fields: metadata_entity_pair for CLUTRR, metadata_config for RuleTaker).\n\n**Files:** full_data_out.json (62,063 total examples, 41MB), mini_data_out.json (6 examples, one per dataset pair), preview_data_out.json (truncated preview). All validated against exp_sel_data_out.json schema.\n\n**Why these two:** CLUTRR provides natural-language kinship stories where pragmatic tiers (assertion vs. presupposition vs. implicature) arise naturally from explicit and implicit relational claims. RuleTaker provides rule+fact contexts where the distinction between directly asserted facts, presupposed entailments, and implicated chain-rule conclusions maps directly onto the planned pragmatic tier classification task. Both datasets have verified provenance, >700 HuggingFace downloads, peer-reviewed papers, and well-structured fields that support the atomic fact extraction and LLM-driven tier classification pipeline described in the artifact plan.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

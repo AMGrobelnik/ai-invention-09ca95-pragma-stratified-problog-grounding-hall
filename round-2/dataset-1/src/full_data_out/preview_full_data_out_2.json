@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "description": "Source documents for pragma-stratified fact extraction",
+    "selected_dataset": "nyt-news-2000-2007",
+    "selection_rationale": "NYT News articles are long (2000-11000 chars), factually dense, and cover diverse topics — ideal for extracting 8-10 facts per document across all pragmatic tiers (assertion, presupposition, implicatu...",
+    "sources": [
+      "NYT News 2000-2007 (ErikCikalleshi/new_york_times_news_2000_2007)"
+    ],
+    "document_types": [
+      "news"
+    ],
+    "total_examples": 55250
+  },
+  "datasets": [
+    {
+      "dataset": "nyt-news-2000-2007",
+      "examples": [
+        {
+          "input": "The United Nations has not sent enough election workers to help monitor pivotal elections scheduled for January, Iraq's foreign minister said here on Wednesday.\n''We feel very disappointed that the pa...",
+          "output": "As January Nears, Iraq Waits for Promised Election Assistance",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "As January Nears, Iraq Waits for Promised Election Assistance",
+          "metadata_date": "2004",
+          "metadata_row_index": 27625,
+          "metadata_text_length": 10316
+        },
+        {
+          "input": "Delanee Koppersmith, owner of Cobblestones on East Ninth Street, has stocked up on vintage Christmas ornaments for the holiday rush. ''It's for the folks looking for that 'Leave It to Beaver' style ho...",
+          "output": "If It's Not Broken, Fix It to the Tree",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "If It's Not Broken, Fix It to the Tree",
+          "metadata_date": "2001",
+          "metadata_row_index": 27626,
+          "metadata_text_length": 1522
+        },
+        {
+          "input": "Arcenia Crayton finally got the opportunity on Wednesday to close a door behind her and experience a rare moment of serenity, five weeks after living shoulder to shoulder with hundreds of other evacue...",
+          "output": "At FEMA's First Big Trailer Park, 'Gold' for One Evacuee",
+          "metadata_document_type": "news",
+          "metadata_source_dataset": "nyt-news-2000-2007",
+          "metadata_title": "At FEMA's First Big Trailer Park, 'Gold' for One Evacuee",
+          "metadata_date": "2005",
+          "metadata_row_index": 27627,
+          "metadata_text_length": 7017
+        }
+      ]
+    }
+  ]
+}
