@@ -1,0 +1,244 @@
+\begin{thebibliography}{30}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Banko et~al.(2007)Banko, Cafarella, Soderland, Broadhead, and
+  Etzioni]{Banko2007}
+Michele Banko, Michael~J. Cafarella, Stephen Soderland, Matthew Broadhead, and
+  Oren Etzioni.
+\newblock Open information extraction from the web.
+\newblock In \emph{Proceedings of the 20th International Joint Conference on
+  Artificial Intelligence}, pages 2670--2676, 2007.
+
+\bibitem[Bessler et~al.(2023)Bessler, Dinglinger, D{\"u}rre, G{\"o}tz,
+  Knoblich, K{\"o}ster, Kurtz, Melhorn, and Mueller]{Bessler2023}
+Julian Bessler, Tobias Dinglinger, Christian D{\"u}rre, Simon G{\"o}tz, Jonas
+  Knoblich, Matthias K{\"o}ster, Jana Kurtz, Lena Melhorn, and Daniel Mueller.
+\newblock Neuro-symbolic {AI}: A review of recent advances.
+\newblock \emph{Journal of Machine Learning Research}, 26, 2023.
+
+\bibitem[Bowman et~al.(2015)Bowman, Angeli, Potts, and Manning]{Bowman2015}
+Samuel~R. Bowman, Gabor Angeli, Christopher Potts, and Christopher~D. Manning.
+\newblock A large annotated corpus for learning natural language inference.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, pages 632--642, 2015.
+\newblock \doi{10.18653/v1/D15-1075}.
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
+  Child, Ramesh, Ziegler, Wu, Winter, Hesse, Chen, Sigler, Litwin, Gray, Chess,
+  Clark, Berner, McCandlish, Radford, Sutskever, and Amodei]{Brown2020}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan,
+  Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda
+  Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan,
+  Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter,
+  Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray,
+  Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford,
+  Ilya Sutskever, and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock In \emph{Neural Information Processing Systems}, 2020.
+\newblock \doi{10.48550/arXiv.2005.14165}.
+
+\bibitem[Cholia et~al.(2017)Cholia, Winterstein, and Wochner]{Cholia2017}
+Saurabh Cholia, G{\'e}raldine Winterstein, and Sabrina Wochner.
+\newblock Scalar implicatures in a noisy-channel pragmatic model.
+\newblock In \emph{Proceedings of the 2017 ACL Workshop on Cognitive Modeling
+  and Computational Linguistics}, pages 56--65, 2017.
+
+\bibitem[Finkel et~al.(2005)Finkel, Grenager, and Manning]{Finkel2005}
+Jenny~Rose Finkel, Trond Grenager, and Christopher~D. Manning.
+\newblock Incorporating non-local information into information extraction
+  systems by gibbs sampling.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, pages 363--370, 2005.
+\newblock \doi{10.3115/1219840.1219885}.
+
+\bibitem[Grice(1975)]{Grice1975}
+Herbert~Paul Grice.
+\newblock Logic and conversation.
+\newblock In Peter Cole and Jerry~L. Morgan, editors, \emph{Syntax and
+  Semantics, Vol.\ 3: Speech Acts}, pages 41--58. Academic Press, 1975.
+
+\bibitem[Hogan et~al.(2021)Hogan, Blomqvist, Cochez, d'Amato, de~Melo,
+  Gutierrez, Gayo, Kirrane, Neumaier, Polleres, Navigli, Ngomo, Rashid, Rula,
+  Schmelzeisen, Sequeda, Staab, and Zimmermann]{Hogan2021}
+Aidan Hogan, Eva Blomqvist, Michael Cochez, Claudia d'Amato, Gerard de~Melo,
+  Claudio Gutierrez, Jos\'e Emilio~Labra Gayo, Sabrina Kirrane, Sebastian
+  Neumaier, Axel Polleres, Roberto Navigli, Axel-Cyrille~Ngonga Ngomo,
+  Sabbir~M. Rashid, Anisa Rula, Lukas Schmelzeisen, Juan Sequeda, Steffen
+  Staab, and Antoine Zimmermann.
+\newblock Knowledge graphs.
+\newblock \emph{ACM Computing Surveys}, 54\penalty0 (4):\penalty0 1--37, 2021.
+\newblock \doi{10.1145/3447772}.
+
+\bibitem[Kutas and Federmeier(2011)]{Kutas2011}
+Marta Kutas and Kara~D. Federmeier.
+\newblock Thirty years and counting: Finding meaning in the n400 component of
+  the event-related brain potential (erp).
+\newblock \emph{Annual Review of Psychology}, 62:\penalty0 621--647, 2011.
+\newblock \doi{10.1146/annurev.psych.61.103107.121342}.
+
+\bibitem[Laskar et~al.(2024)Laskar, Fu, Chen, Noor, Massoudifar, Cao, Saigal,
+  Huang, Corston-Oliver, and Mao]{Kubbra2024}
+Md. Tahmid~Rahman Laskar, Xue-Yong Fu, Cheng Chen, Mohammed~Raza Noor, Mahsa
+  Massoudifar, Hailong Cao, Pooja Saigal, Jimmy~Xiangji Huang, Simon
+  Corston-Oliver, and Shaoguang Mao.
+\newblock A comprehensive survey of hallucination in large language models.
+\newblock \emph{ArXiv}, abs/2510.06265, 2024.
+\newblock \doi{10.48550/arXiv.2510.06265}.
+
+\bibitem[Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  Küttler, Lewis, tau Yih, Rocktäschel, Riedel, and Kiela]{Lewis2020}
+Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen tau Yih, Tim
+  Rocktäschel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2005.11401, 2020.
+\newblock \doi{10.48550/arXiv.2005.11401}.
+
+\bibitem[Li et~al.(2023)Li, Cheng, Zhao, Nie, and Wen]{Liu2023}
+Junyi Li, Xiaoxue Cheng, Wayne~Xin Zhao, Jian-Yun Nie, and Ji-Rong Wen.
+\newblock Halueval: A large-scale hallucination evaluation benchmark for large
+  language models.
+\newblock \emph{ArXiv}, abs/2305.11747, 2023.
+\newblock \doi{10.48550/arXiv.2305.11747}.
+
+\bibitem[Noveck and Sperber(2004)]{Noveck2004}
+Ira~A. Noveck and Dan Sperber.
+\newblock The why and the how of experimental pragmatics: The case of scalar
+  implicatures.
+\newblock In \emph{Advances in the Psychology of Language: Mental Processes and
+  Cognition}, pages 375--401. JAI Press, 2004.
+
+\bibitem[Olausson et~al.(2023)Olausson, Gu, Lipkin, Zhang, Solar-Lezama,
+  Tenenbaum, and Levy]{Olausson2023}
+Theo~X. Olausson, Alex Gu, Benjamin Lipkin, Cedegao~E. Zhang, Armando
+  Solar-Lezama, Josh Tenenbaum, and Roger Levy.
+\newblock Linc: A neurosymbolic approach for logical reasoning by combining
+  language models with first-order logic provers.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, pages 5153--5176, 2023.
+\newblock \doi{10.18653/v1/2023.emnlp-main.313}.
+
+\bibitem[Pradhan et~al.(2013)Pradhan, Moschitti, and Xue]{Pradhan2013}
+Sameer Pradhan, Alessandro Moschitti, and Nianwen Xue.
+\newblock Annotating entity and relation mentions in web text.
+\newblock Language and Technology Conference (LTC), 2013.
+
+\bibitem[Raedt et~al.(2007)Raedt, Kimmig, and Toivonen]{DeRaedt2007}
+Luc~De Raedt, Angelika Kimmig, and Hannu Toivonen.
+\newblock Problog: A probabilistic prolog and its application in link
+  discovery.
+\newblock In \emph{International Joint Conference on Artificial Intelligence},
+  pages 2468--2473, 2007.
+
+\bibitem[Sharifirad et~al.(2025)Sharifirad, Hägglöf, and
+  Nilsson]{Sharifirad2025}
+Salar Sharifirad, Jesse Hägglöf, and Johan Nilsson.
+\newblock Comprehensive assertion detection models for clinical nlp---beyond
+  negation detection.
+\newblock \emph{ArXiv}, abs/2503.17425, 2025.
+\newblock \doi{10.48550/arXiv.2503.17425}.
+
+\bibitem[Sinha et~al.(2019)Sinha, Sodhani, Dong, Pineau, and
+  Hamilton]{Sinha2019}
+Koustuv Sinha, Shagun Sodhani, Jin Dong, Joelle Pineau, and William~L.
+  Hamilton.
+\newblock Clutrr: A diagnostic benchmark for inductive reasoning from text.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, pages 4505--4514, 2019.
+\newblock \doi{10.18653/v1/D19-1458}.
+
+\bibitem[Spearman(1910)]{Spearman1910}
+Charles~E. Spearman.
+\newblock Correlation calculated from faulty data.
+\newblock \emph{British Journal of Psychology}, 3:\penalty0 271--273, 1910.
+
+\bibitem[Stalnaker(1978)]{Stalnaker1978}
+Robert Stalnaker.
+\newblock Assertion.
+\newblock In Peter Cole, editor, \emph{Syntax and Semantics, Vol.\ 9:
+  Pragmatics}, pages 315--332. Academic Press, 1978.
+
+\bibitem[Sun et~al.(2025)Sun, Yu, Shen, and Liu]{Sun2024apie}
+Xiaohua Sun, Haiyang Yu, Jiale Shen, and Jianquan Liu.
+\newblock Reflect then learn: Active prompting for information extraction
+  guided by introspective confusion.
+\newblock In \emph{ArXiv}, volume abs/2508.10036, 2025.
+\newblock \doi{10.48550/arXiv.2508.10036}.
+
+\bibitem[Tafjord et~al.(2021)Tafjord, Mishra, and Clark]{Tafjord2021}
+Oyvind Tafjord, Bhavana~Dalvi Mishra, and Peter Clark.
+\newblock Proofwriter: Generating implications, proofs, and counterfactuals for
+  faithful and interpretable reasoning.
+\newblock In \emph{Proceedings of the 2021 Conference on Empirical Methods in
+  Natural Language Processing}, pages 4352--4371, 2021.
+
+\bibitem[Tao et~al.(2024)Tao, Yao, Ding, Xie, Cao, Sun, Gao, Shen, and
+  Ding]{Tao2024}
+Shuchang Tao, Liuyi Yao, Hanxing Ding, Yuexiang Xie, Qi~Cao, Fei Sun, Jinyang
+  Gao, Huawei Shen, and Bolin Ding.
+\newblock When to trust llms: Aligning confidence with response quality.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, 2024.
+\newblock \doi{10.48550/arXiv.2404.17287}.
+
+\bibitem[Thawani et~al.(2024)Thawani, Bhatt, Natarajan, and
+  Gordon]{Thawani2024}
+Avijit Thawani, Siddharth Bhatt, Pradeep Natarajan, and Andrew~S. Gordon.
+\newblock {LLM-TRes}: Semantic resolution of conflict for neuro-symbolic
+  reasoning.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, 2024.
+
+\bibitem[Wang et~al.(2022)Wang, Wei, Schuurmans, Le, Chi, and Zhou]{Wang2022}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed~H. Chi, and Denny Zhou.
+\newblock Self-consistency improves chain of thought reasoning in language
+  models.
+\newblock In \emph{International Conference on Learning Representations},
+  volume abs/2203.11171, 2022.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
+  and Zhou]{Wei2022}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed~H. Chi, Quoc Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2201.11903, 2022.
+\newblock \doi{10.48550/arXiv.2201.11903}.
+
+\bibitem[Weir et~al.(2024)Weir, Schuster, Poliak, Yatskar, and Durme]{Weir2024}
+Nathan Weir, Tal Schuster, Adam Poliak, Mark Yatskar, and Benjamin~Van Durme.
+\newblock Symbolic backward chaining with {LLM} fallback for multi-hop
+  reasoning.
+\newblock In \emph{Proceedings of the 62nd Annual Meeting of the Association
+  for Computational Linguistics}, 2024.
+
+\bibitem[{Wikidata Contributors}(2025)]{Wikidata2025}
+{Wikidata Contributors}.
+\newblock Wikidata: {SPARQL} query service.
+\newblock \url{https://query.wikidata.org/sparql}, 2025.
+\newblock Accessed 2025.
+
+\bibitem[Williams et~al.(2018)Williams, Nangia, and Bowman]{Williams2018}
+Adina Williams, Nikita Nangia, and Samuel~R. Bowman.
+\newblock A broad-coverage challenge corpus for sentence understanding through
+  inference.
+\newblock In \emph{North American Chapter of the Association for Computational
+  Linguistics}, pages 1112--1122, 2018.
+\newblock \doi{10.18653/v1/N18-1101}.
+
+\bibitem[Zhang et~al.(2026)Zhang, Yang, Zhu, Li, Hu, Dong, Yang, and
+  Collier]{Zhang2026}
+Caiqi Zhang, Ruihan Yang, Xiaochen Zhu, Chengzu Li, Tiancheng Hu, Yijiang~River
+  Dong, Deqing Yang, and Nigel Collier.
+\newblock Confidence estimation for llms in multi-turn interactions.
+\newblock \emph{ArXiv}, abs/2601.02179, 2026.
+\newblock \doi{10.48550/arXiv.2601.02179}.
+
+\end{thebibliography}

@@ -1,0 +1,14 @@
+{
+  "title": "Pragma-Stratified ProbLog: Neuro-Symbolic Reasoning Paper",
+  "summary": "Generated a complete 15-page publication-ready LaTeX paper titled 'Pragma-Stratified ProbLog: Grounding Hallucination Risk in Linguistic Commitment Tiers for Neuro-Symbolic Textual Reasoning'. The paper covers 7 sections: Introduction, Related Work (neuro-symbolic reasoning, knowledge extraction, hallucination, linguistic pragmatics), Pragmatic Tier Framework and Empirical Calibration (tier definitions, empirical validation study, confidence intervals), Pragma-Stratified ProbLog Pipeline (4 stages: PRAGMA-EXTRACT, KB Construction, Proof-Gap Abduction with Wikidata type-checking, Evaluation and Hallucination Quantification), Experiments (CLUTRR and RuleTaker benchmarks, 5-method comparison, tier classification accuracy, multi-hop reasoning accuracy with McNemar's test, hallucination bound validation), Discussion (6.1-6.7 covering tier vs. confidence, complementary signals, benchmark performance, hallucination bound, limitations, path forward, broader implications), and Conclusion. All 3 figures from available_figures were included: fig_architecture_v0.jpg (full-width pipeline diagram, page 3), fig_benchmark_results_v0.jpg (full-width grouped bar chart, page 9), fig_hallucination_bound_v0.jpg (single-column scatter plot, page 10). BibTeX references were fetched via Semantic Scholar for 18 papers and written manually for 11 remaining entries (Grice 1975, Stalnaker 1978, Thawani 2024, Weir 2024, Cholia 2017, Bessler 2023, Banko 2007, Pradhan 2013, Spearman 1910, Tafjord 2021, Wikidata 2025). Paper compiled successfully to PDF (15 pages, ~4.3MB) using pdflatex + bibtex + pdflatex x2. Visual review of all 15 pages confirmed clean layout, properly placed figures, no overlapping text, and correctly formatted references.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig_architecture_v0.jpg",
+      "figures/fig_benchmark_results_v0.jpg",
+      "figures/fig_hallucination_bound_v0.jpg"
+    ]
+  }
+}
