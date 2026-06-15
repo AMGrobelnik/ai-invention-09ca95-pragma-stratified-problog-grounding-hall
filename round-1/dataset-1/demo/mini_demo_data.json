@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "description": "Pragmatic tier annotation source datasets: kinship reasoning and rule-based entailment benchmarks",
+    "source_hf_ids": [
+      "tasksource/clutrr",
+      "tasksource/ruletaker"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "clutrr",
+      "examples": [
+        {
+          "input": "[Ashley]'s daughter, [Lillian], asked her mom to read her a story. [Nicholas]'s sister [Lillian] asked him for some help planting her garden.",
+          "output": "15",
+          "metadata_entity_pair": "('Ashley', 'Nicholas')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 0
+        },
+        {
+          "input": "[Nancy] likes to cut the hair of her daughter [Heidi]. [Heidi]'s sister [Lorraine] went to beauty school and taught them all how to cut hair expertly.",
+          "output": "2",
+          "metadata_entity_pair": "('Nancy', 'Lorraine')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 1
+        },
+        {
+          "input": "[Dale] and his sister [Nancy] are decorating for a party. [Nancy]'s daughter [Louise] thinks the party will be fun.",
+          "output": "13",
+          "metadata_entity_pair": "('Dale', 'Louise')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 2
+        }
+      ]
+    },
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is blue.",
+          "output": "entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392232
+        },
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is not blue.",
+          "output": "not entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392233
+        },
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is young.",
+          "output": "entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392234
+        }
+      ]
+    }
+  ]
+}

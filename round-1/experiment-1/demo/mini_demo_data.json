@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "method_name": "pragma_tier_validation_assumption_1",
+    "description": "Mini demo: validates pragmatic tier\u2013fact correctness correlation on 3 curated examples",
+    "total_facts_in_full_study": 120,
+    "verdict_on_full_data": "INCONCLUSIVE",
+    "rho_full_data": -0.6796
+  },
+  "examples": [
+    {
+      "input": "Document type: legal | Fact: hired as position(Dr. Sarah Chen, Chief Technology Officer) | Source span: Employee is hired as Chief Technology Officer",
+      "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: Direct quotation. Document states 'Employee is hired as Chief Technology Officer' and identifies Employee as 'Dr. Sarah Chen.' Claim accurately restates this information.",
+      "predict_our_method": "T1:assertion",
+      "predict_baseline": "conf:92",
+      "metadata_doc_id": "legal_01",
+      "metadata_doc_type": "legal",
+      "metadata_tier": "1",
+      "metadata_tier_name": "assertion",
+      "metadata_correctness": "1",
+      "metadata_confidence": "92",
+      "metadata_verdict": "TRUE"
+    },
+    {
+      "input": "Document type: legal | Fact: receives base salary(Dr. Sarah Chen, $280,000 per annum) | Source span: Employer shall pay Employee a base salary of $280,000 per annum",
+      "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: The claim is a direct restatement of the document's explicit statement that 'Employer shall pay Employee a base salary of $280,000 per annum.' The specific amount and frequency match exactly.",
+      "predict_our_method": "T1:assertion",
+      "predict_baseline": "conf:94",
+      "metadata_doc_id": "legal_01",
+      "metadata_doc_type": "legal",
+      "metadata_tier": "1",
+      "metadata_tier_name": "assertion",
+      "metadata_correctness": "1",
+      "metadata_confidence": "94",
+      "metadata_verdict": "TRUE"
+    },
+    {
+      "input": "Document type: legal | Fact: agreement term duration(Employment Agreement, three years) | Source span: continues for a period of three years unless earlier terminated",
+      "output": "Correctness: TRUE | Tier: T1 (assertion) | Reasoning: Rule 3: Direct quotation. Document states 'continues for a period of three years unless earlier terminated.' Claim accurately reflects the stated agreement term duration of three years.",
+      "predict_our_method": "T1:assertion",
+      "predict_baseline": "conf:91",
+      "metadata_doc_id": "legal_01",
+      "metadata_doc_type": "legal",
+      "metadata_tier": "1",
+      "metadata_tier_name": "assertion",
+      "metadata_correctness": "1",
+      "metadata_confidence": "91",
+      "metadata_verdict": "TRUE"
+    }
+  ]
+}

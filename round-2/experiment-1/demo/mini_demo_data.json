@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "method": "Pragma-Stratified ProbLog Statistical Validation",
+    "description": "3-stage statistical validation: tier-correctness Spearman, McNemar benchmark, hallucination bound power analysis",
+    "model": "meta-llama/llama-3.1-8b-instruct",
+    "n_clutrr": 3,
+    "n_ruletaker": 3,
+    "note": "Demo subset - 5 examples per dataset for quick testing"
+  },
+  "datasets": [
+    {
+      "dataset": "clutrr",
+      "examples": [
+        {
+          "input": "[Cindy] was playing in the sandbox with her brother [Hugh]. [Frances] adores her son Micheal. Micheal's father [James] is a great dad. [James] is raising his daughter, [Cindy] all by himself.",
+          "output": "15",
+          "metadata_entity_pair": "('Frances', 'Hugh')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 4420,
+          "predict_rag": "15",
+          "predict_chain_of_thought": "1",
+          "predict_flat_fol_ablation": "-1",
+          "predict_pragma_problog": "-1",
+          "predict_llm_tres": "6"
+        },
+        {
+          "input": "[Wesley] went with his nephew [Pete] to the gas station, they both had to use the men's restroom. [Pete] brought home straight A's to his father [Francisco]. [Leonard] brought home straight C's to his father [Francisco].",
+          "output": "17",
+          "metadata_entity_pair": "('Leonard', 'Wesley')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 6071,
+          "predict_rag": "4",
+          "predict_chain_of_thought": "1",
+          "predict_flat_fol_ablation": "-1",
+          "predict_pragma_problog": "-1",
+          "predict_llm_tres": "1"
+        },
+        {
+          "input": "[Lena]'s nephew, [Joseph], brought her lunch at work. [Lena] liked to play hide and seek with her son [Irvin]. [Joseph]'s father's name is [Joshua].",
+          "output": "12",
+          "metadata_entity_pair": "('Joshua', 'Irvin')",
+          "metadata_task_type": "kinship_classification",
+          "metadata_row_index": 5376,
+          "predict_rag": "4",
+          "predict_chain_of_thought": "1",
+          "predict_flat_fol_ablation": "-1",
+          "predict_pragma_problog": "-1",
+          "predict_llm_tres": "8"
+        }
+      ]
+    },
+    {
+      "dataset": "ruletaker",
+      "examples": [
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is blue.",
+          "output": "entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392232,
+          "predict_rag": "not entailment",
+          "predict_chain_of_thought": "not entailment",
+          "predict_flat_fol_ablation": "entailment",
+          "predict_pragma_problog": "entailment",
+          "predict_llm_tres": "entailment"
+        },
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is not blue.",
+          "output": "not entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392233,
+          "predict_rag": "not entailment",
+          "predict_chain_of_thought": "not entailment",
+          "predict_flat_fol_ablation": "not entailment",
+          "predict_pragma_problog": "not entailment",
+          "predict_llm_tres": "not entailment"
+        },
+        {
+          "input": "Context: Dave is young. Dave is blue. Eric is young. Eric is round. Eric is nice. Harry is round. Harry is green. Harry is blue. If someone is kind and round then they are red. If someone is young and blue and big then they are red. If someone is blue and green and young then they are kind. If someone is green then they are young. If someone is blue and young and round then they are green. If someone is cold and blue then they are rough. If someone is big and rough and green then they are blue.\n\nQuestion: Harry is young.",
+          "output": "entailment",
+          "metadata_config": "NatLang",
+          "metadata_task_type": "entailment_classification",
+          "metadata_row_index": 392234,
+          "predict_rag": "not entailment",
+          "predict_chain_of_thought": "not entailment",
+          "predict_flat_fol_ablation": "entailment",
+          "predict_pragma_problog": "entailment",
+          "predict_llm_tres": "entailment"
+        }
+      ]
+    }
+  ]
+}
